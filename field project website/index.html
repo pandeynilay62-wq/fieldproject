@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Artificial Intelligence — Balanced Perspective</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1>Artificial Intelligence</h1>
+      <p class="subtitle">A balanced perspective on benefits & challenges — for BCA Semester 3</p>
+      <nav class="nav">
+        <a href="#intro">Introduction</a>
+        <a href="#evolution">Evolution</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#ethics">Ethics</a>
+        <a href="#trends">Trends</a>
+        <a href="#society">How Society Can</a>
+        <a href="#conclusion">Conclusion</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="intro" class="card">
+      <h2>Introduction: The Power & Promise of AI</h2>
+      <p><strong>Transformative technology:</strong> AI is revolutionizing healthcare, finance, transport and more — reshaping how we work and live.</p>
+      <p><strong>Dual nature:</strong> Immense benefits coexist with significant challenges that require careful consideration.</p>
+    </section>
+
+    <section id="evolution" class="card timeline">
+      <h2>Evolution of AI</h2>
+      <ul>
+        <li><strong>1940s — Foundation Era:</strong> Alan Turing and pioneers laid theoretical groundwork.</li>
+        <li><strong>1956 — Birth of AI:</strong> Dartmouth Conference coins the term "Artificial Intelligence".</li>
+        <li><strong>2000s — Deep Learning:</strong> Neural-network breakthroughs changed capability scale.</li>
+        <li><strong>2025 — Ubiquitous Integration:</strong> AI becomes embedded across sectors.</li>
+      </ul>
+    </section>
+
+    <section id="benefits" class="card">
+      <h2>Benefits of AI</h2>
+      <div class="grid">
+        <div class="box">
+          <h3>Enhanced Efficiency</h3>
+          <p>Automation reduces errors and increases productivity.</p>
+        </div>
+        <div class="box">
+          <h3>Medical Breakthroughs</h3>
+          <p>Better diagnostics, faster drug discovery, personalised treatment.</p>
+        </div>
+        <div class="box">
+          <h3>Daily Life</h3>
+          <p>Smart assistants and devices simplify tasks.</p>
+        </div>
+        <div class="box">
+          <h3>Climate Solutions</h3>
+          <p>Advanced modelling predicts disasters and optimizes renewables.</p>
+        </div>
+      </div>
+      <p class="note">Economic note: AI-driven industries are projected to contribute trillions to the global economy by 2030.</p>
+    </section>
+
+    <section id="challenges" class="card">
+      <h2>Challenges of AI</h2>
+      <ul class="bullets">
+        <li><strong>Bias & fairness:</strong> Algorithmic discrimination in hiring, lending, justice.</li>
+        <li><strong>Privacy:</strong> Large-scale data collection risks surveillance.</li>
+        <li><strong>Job displacement:</strong> Automation may widen inequality.</li>
+        <li><strong>Security:</strong> Deepfakes, cyberattacks, misuse of autonomous systems.</li>
+        <li><strong>Transparency:</strong> Black-box models are hard to audit.</li>
+      </ul>
+    </section>
+
+    <section id="ethics" class="card">
+      <h2>Ethical Considerations</h2>
+      <p>Key topics: accountability, transparency, algorithmic fairness, balancing innovation with privacy.</p>
+      <p>Global response: Governments and organizations are developing AI governance frameworks.</p>
+    </section>
+
+    <section id="trends" class="card">
+      <h2>Current Trends & Future Outlook</h2>
+      <ul class="bullets">
+        <li><strong>AI Regulation:</strong> Policies emerging across the US, EU, China.</li>
+        <li><strong>Explainable AI:</strong> Trustworthy, interpretable models are gaining focus.</li>
+        <li><strong>Human-AI Partnership:</strong> Augmentation over replacement.</li>
+        <li><strong>Market:</strong> Rapid enterprise adoption and growth expected.</li>
+      </ul>
+    </section>
+
+    <section id="society" class="card">
+      <h2>How Society Can Maximize Benefits & Mitigate Risks</h2>
+      <ol class="steps">
+        <li>Promote ethical AI research and bias-detection tools.</li>
+        <li>Invest in AI literacy and workforce reskilling.</li>
+        <li>Implement strong privacy laws and consent controls.</li>
+        <li>Foster international cooperation and shared standards.</li>
+        <li>Balance innovation with human values and dignity.</li>
+      </ol>
+    </section>
+
+    <section id="conclusion" class="card">
+      <h2>Conclusion — Embracing AI Responsibly</h2>
+      <p>AI has huge potential to solve global problems, but proactive policy, transparency and cooperation are essential to ensure benefits are shared widely.</p>
+      <p class="thank">Questions? Discuss and explore how we can shape AI's future together.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>field project</p>
+      <p>© <span id="year"></span> Nilay and niraj</p>
+    </div>
+  </footer>
+
+  <script>
+    // small JS to show year and smooth scroll behavior
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('.nav a').forEach(a=>{
+      a.addEventListener('click', function(e){
+        // smooth scroll
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
